@@ -23,6 +23,13 @@ namespace AdvancedFileMover
                 //Load mother Directory
                 //var motherDirectory = System.IO.Directory.GetDirectories()
 
+                string[] filePaths = IOHelper.GetAllFilesFromDir(sourceLocation);
+                foreach (var filePath in filePaths)
+                {
+                    Console.WriteLine($"Copying file: '{filePath}'");
+                    IOHelper.CopyFile(filePath,targetLocation,null);
+                }
+                Console.WriteLine("Done...");
             }
             catch (ArgumentException aex)
             {
