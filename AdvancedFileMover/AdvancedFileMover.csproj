@@ -45,6 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Helpers\ConfigurationHelper.cs" />
+    <Compile Include="Helpers\CountryHelper.cs" />
+    <Compile Include="Helpers\Extensions.cs" />
+    <Compile Include="Helpers\FileMaskHelper.cs" />
     <Compile Include="Helpers\IOHelper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
